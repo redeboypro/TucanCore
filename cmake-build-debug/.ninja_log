@@ -1,0 +1,8 @@
+# ninja log v5
+12	102	7234938758424209	CMakeFiles/TucanCore.dir/Math/Vector3.cpp.obj	15112d985c1c1540
+565	734	7234938764674336	libTucanCore.dll.a	90a65fbeef090996
+1	306	7234938760414805	CMakeFiles/TucanCore.dir/library.cpp.obj	1f41ac8e373eaedc
+5	332	7234938760700052	CMakeFiles/TucanCore.dir/Bridges/EBO.cpp.obj	b074610d58a47e5b
+9	343	7234938760810086	CMakeFiles/TucanCore.dir/Bridges/VBO.cpp.obj	ffbb7bdd93f1778a
+15	565	7234938763029019	CMakeFiles/TucanCore.dir/Bridges/VAO.cpp.obj	2579255bf7b6b6f5
+565	734	7234938764674336	libTucanCore.dll	90a65fbeef090996

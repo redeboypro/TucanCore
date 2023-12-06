@@ -1,0 +1,6 @@
+#ifndef TUCANCORE_LIBRARY_H
+#define TUCANCORE_LIBRARY_H
+
+
+
+#endif

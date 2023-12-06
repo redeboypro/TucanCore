@@ -1,0 +1,3 @@
+C:/Users/redeb/CLionProjects/TucanCore/cmake-build-debug/CMakeFiles/TucanCore.dir
+C:/Users/redeb/CLionProjects/TucanCore/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/redeb/CLionProjects/TucanCore/cmake-build-debug/CMakeFiles/rebuild_cache.dir
