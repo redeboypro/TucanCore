@@ -49,13 +49,6 @@ cmake_ninja_workdir = C$:/Users/redeb/CLionProjects/TucanCore/cmake-build-debug/
 
 build cmake_object_order_depends_target_TucanCore: phony || CMakeFiles/TucanCore.dir
 
-build CMakeFiles/TucanCore.dir/library.cpp.obj: CXX_COMPILER__TucanCore_Debug C$:/Users/redeb/CLionProjects/TucanCore/library.cpp || cmake_object_order_depends_target_TucanCore
-  DEFINES = -DTucanCore_EXPORTS
-  DEP_FILE = CMakeFiles\TucanCore.dir\library.cpp.obj.d
-  FLAGS = -g -std=gnu++1z
-  OBJECT_DIR = CMakeFiles\TucanCore.dir
-  OBJECT_FILE_DIR = CMakeFiles\TucanCore.dir
-
 build CMakeFiles/TucanCore.dir/Bridges/VBO.cpp.obj: CXX_COMPILER__TucanCore_Debug C$:/Users/redeb/CLionProjects/TucanCore/Bridges/VBO.cpp || cmake_object_order_depends_target_TucanCore
   DEFINES = -DTucanCore_EXPORTS
   DEP_FILE = CMakeFiles\TucanCore.dir\Bridges\VBO.cpp.obj.d
@@ -113,7 +106,7 @@ build CMakeFiles/TucanCore.dir/Math/Quaternion.cpp.obj: CXX_COMPILER__TucanCore_
 #############################################
 # Link the shared library libTucanCore.dll
 
-build libTucanCore.dll libTucanCore.dll.a: CXX_SHARED_LIBRARY_LINKER__TucanCore_Debug CMakeFiles/TucanCore.dir/library.cpp.obj CMakeFiles/TucanCore.dir/Bridges/VBO.cpp.obj CMakeFiles/TucanCore.dir/Bridges/EBO.cpp.obj CMakeFiles/TucanCore.dir/Bridges/VAO.cpp.obj CMakeFiles/TucanCore.dir/Math/Vector3.cpp.obj CMakeFiles/TucanCore.dir/Math/MathF.cpp.obj CMakeFiles/TucanCore.dir/Math/Matrix4x4.cpp.obj CMakeFiles/TucanCore.dir/Math/Quaternion.cpp.obj | C$:/MinGW/lib/Release/Win32/glew32.lib
+build libTucanCore.dll libTucanCore.dll.a: CXX_SHARED_LIBRARY_LINKER__TucanCore_Debug CMakeFiles/TucanCore.dir/Bridges/VBO.cpp.obj CMakeFiles/TucanCore.dir/Bridges/EBO.cpp.obj CMakeFiles/TucanCore.dir/Bridges/VAO.cpp.obj CMakeFiles/TucanCore.dir/Math/Vector3.cpp.obj CMakeFiles/TucanCore.dir/Math/MathF.cpp.obj CMakeFiles/TucanCore.dir/Math/Matrix4x4.cpp.obj CMakeFiles/TucanCore.dir/Math/Quaternion.cpp.obj | C$:/MinGW/lib/Release/Win32/glew32.lib
   LANGUAGE_COMPILE_FLAGS = -g
   LINK_LIBRARIES = -lopengl32  -lglu32  C:/MinGW/lib/Release/Win32/glew32.lib  -lopengl32  -g  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\TucanCore.dir
