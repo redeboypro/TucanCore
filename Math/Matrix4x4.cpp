@@ -58,7 +58,7 @@ Vector3<T> Matrix4x4<T>::mulPt(const Vector3<T> &pt) const
 {
     Vector3<T> res = mulPt3x4(pt);
 
-    float w = m41() * pt.getX() + m42() * pt.getY() + m43() * pt.getZ() + m44();
+    float w = this[3][0] * pt.getX() + this[3][1] * pt.getY() + this[3][2] * pt.getZ() + this[3][3];
 
     w = 1.0f / w;
     res *= w;
@@ -71,9 +71,9 @@ Vector3<T> Matrix4x4<T>::mulPt3x4(const Vector3<T> &pt) const
 {
     Vector3<T> res;
 
-    res.x = m11() * pt.getX() + m12() * pt.getY() + m13() * pt.getZ() + m14();
-    res.y = m21() * pt.getX() + m22() * pt.getY() + m23() * pt.getZ() + m24();
-    res.z = m31() * pt.getX() + m32() * pt.getY() + m33() * pt.getZ() + m34();
+    res.x = this[0][0] * pt.x + this[0][1] * pt.y + this[0][2] * pt.z + this[0][3];
+    res.y = this[1][0] * pt.x + this[1][1] * pt.y + this[1][2] * pt.z + this[1][3];
+    res.z = this[2][0] * pt.x + this[2][1] * pt.y + this[2][2] * pt.z + this[2][3];
 
     return res;
 }
@@ -83,9 +83,9 @@ Vector3<T> Matrix4x4<T>::mulVec(const Vector3<T> &vec) const
 {
     Vector3<T> res;
 
-    res.x = m11() * vec.getX() + m12() * vec.getY() + m13() * vec.getZ();
-    res.y = m21() * vec.getX() + m22() * vec.getY() + m23() * vec.getZ();
-    res.z = m31() * vec.getX() + m32() * vec.getY() + m33() * vec.getZ();
+    res.x = this[0][0] * vec.x + this[0][1] * vec.y + this[0][2] * vec.z;
+    res.y = this[1][0] * vec.x + this[1][1] * vec.y + this[1][2] * vec.z;
+    res.z = this[2][0] * vec.x + this[2][1] * vec.y + this[2][2] * vec.z;
 
     return res;
 }
