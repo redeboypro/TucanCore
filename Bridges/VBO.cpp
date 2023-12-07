@@ -1,5 +1,12 @@
 #include "VBO.h"
 
+VBO::VBO(int attributeLocation, int dimension) : m_attributeLocation(attributeLocation), m_dimension(dimension), m_id(-1) {}
+
+VBO::~VBO()
+{
+    deleteBuffer();
+}
+
 template<class T>
 void VBO::genBuffer(const std::vector<T> &data)
 {
@@ -20,5 +27,3 @@ void VBO::deleteBuffer()
 {
     glDeleteBuffers(1, &m_id);
 }
-
-VBO::VBO(int attributeLocation, int dimension) : m_attributeLocation(attributeLocation), m_dimension(dimension), m_id(-1) {}

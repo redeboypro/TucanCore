@@ -14,6 +14,7 @@ private:
 
 public:
     EBO();
+    ~EBO();
 
     template<class T>
     void genBuffer(const std::vector<T>& data);

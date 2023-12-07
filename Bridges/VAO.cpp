@@ -5,6 +5,11 @@ VAO::VAO() : m_id(0)
     glGenVertexArrays(1, &m_id);
 }
 
+VAO::~VAO()
+{
+    deleteBuffers();
+}
+
 template<class T>
 void VAO::genElementBufferObject(const std::vector<T> &data)
 {

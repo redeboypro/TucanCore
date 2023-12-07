@@ -1,5 +1,12 @@
 #include "EBO.h"
 
+EBO::EBO() : m_id(-1) {}
+
+EBO::~EBO()
+{
+    deleteBuffer();
+}
+
 template<class T>
 void EBO::genBuffer(const std::vector<T> &data)
 {
@@ -19,5 +26,3 @@ void EBO::deleteBuffer()
 {
     glDeleteBuffers(1, &m_id);
 }
-
-EBO::EBO() : m_id(-1) {}

@@ -12,6 +12,7 @@ private:
 
 public:
     VBO(int attributeLocation, int dimension);
+    ~VBO();
 
     template<class T>
     void genBuffer(const std::vector<T>& data);

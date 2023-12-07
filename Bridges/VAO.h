@@ -13,6 +13,7 @@ private:
 
 public:
     VAO();
+    ~VAO();
 
     template<class T>
     void genElementBufferObject(const std::vector<T>& data);
