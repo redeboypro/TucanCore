@@ -1,11 +1,11 @@
 #include "Matrix4x4.h"
 
 template<class T>
-Matrix4x4<T>::Matrix4x4(const Vector<T, 4> *rows)
+Matrix4x4<T>::Matrix4x4(const std::array<Vector<T, 4>, 4> &rows)
 {
-    for (int i = 0; i < 4; i++)
+    for (int r = 0; r < 4; r++)
     {
-        this[i] = rows[i];
+        this->m_rows[r] = rows[r];
     }
 }
 
@@ -89,6 +89,5 @@ Vector3<T> Matrix4x4<T>::mulVec(const Vector3<T> &vec) const
 
     return res;
 }
-
 
 

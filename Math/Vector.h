@@ -8,7 +8,7 @@ template<typename T, size_t Size>
 struct Vector
 {
 protected:
-    T m_components;
+    T m_components[Size];
 
 public:
     T& operator[](const size_t& inx)

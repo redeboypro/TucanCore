@@ -18,7 +18,7 @@ public:
               const T& m31, const T& m32, const T& m33, const T& m34,
               const T& m41, const T& m42, const T& m43, const T& m44);
 
-    explicit Matrix4x4(const Vector<T, 4> *rows);
+    explicit Matrix4x4(const std::array<Vector<T, 4>, 4>& rows);
 
     Matrix4x4<T>& operator=(const Matrix4x4& other) = default;
     Matrix4x4<T> operator*(const Matrix4x4& other) const;

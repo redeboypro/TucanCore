@@ -34,7 +34,7 @@ Vector3<T> Vector3<T>::operator*(const Vector3 &other) const
 }
 
 template<class T>
-Vector3<T> Vector3<T>::operator*(float factor) const
+Vector3<T> Vector3<T>::operator*(const T& factor) const
 {
     return Vector3<T>(x * factor, y * factor, z * factor);
 }
@@ -46,7 +46,7 @@ Vector3<T> Vector3<T>::operator/(const Vector3 &other) const
 }
 
 template<class T>
-Vector3<T> Vector3<T>::operator/(float factor) const
+Vector3<T> Vector3<T>::operator/(const T& factor) const
 {
     float invertedFactor = 1.0f / factor;
     return Vector3<T>(x * invertedFactor, y * invertedFactor, z * invertedFactor);
@@ -67,7 +67,7 @@ T Vector3<T>::sqrLength() const
 template<class T>
 void Vector3<T>::normalize() const
 {
-    float invertedFactor = 1.0f / length();
+    T invertedFactor = 1.0f / length();
 
     x *= invertedFactor;
     y *= invertedFactor;

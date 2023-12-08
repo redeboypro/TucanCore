@@ -31,9 +31,9 @@ public:
     Vector3<T> operator-() const;
     Vector3<T> operator-(const Vector3& other) const;
     Vector3<T> operator*(const Vector3& other) const;
-    Vector3<T> operator*(float factor) const;
+    Vector3<T> operator*(const T& factor) const;
     Vector3<T> operator/(const Vector3& other) const;
-    Vector3<T> operator/(float factor) const;
+    Vector3<T> operator/(const T& factor) const;
 
     T dot(const Vector3& other) const;
     Vector3<T> cross(const Vector3& other) const;

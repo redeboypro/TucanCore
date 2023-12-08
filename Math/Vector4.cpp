@@ -43,7 +43,7 @@ Vector4<T> Vector4<T>::operator*(const Vector4 &other) const
 }
 
 template<class T>
-Vector4<T> Vector4<T>::operator*(float factor) const
+Vector4<T> Vector4<T>::operator*(const T& factor) const
 {
     return Vector4<T>(x * factor, y * factor, z * factor, w * factor);
 }
@@ -55,7 +55,7 @@ Vector4<T> Vector4<T>::operator/(const Vector4 &other) const
 }
 
 template<class T>
-Vector4<T> Vector4<T>::operator/(float factor) const
+Vector4<T> Vector4<T>::operator/(const T& factor) const
 {
     float invertedFactor = 1.0f / factor;
     return Vector4<T>(x * invertedFactor, y * invertedFactor, z * invertedFactor, w * invertedFactor);
@@ -76,7 +76,7 @@ T Vector4<T>::sqrLength() const
 template<class T>
 void Vector4<T>::normalize() const
 {
-    float invertedFactor = 1.0f / length();
+    T invertedFactor = 1.0f / length();
 
     x *= invertedFactor;
     y *= invertedFactor;

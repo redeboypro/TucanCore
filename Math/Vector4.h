@@ -30,9 +30,9 @@ public:
     Vector4<T> operator-() const;
     Vector4<T> operator-(const Vector4& other) const;
     Vector4<T> operator*(const Vector4& other) const;
-    Vector4<T> operator*(float factor) const;
+    Vector4<T> operator*(const T& factor) const;
     Vector4<T> operator/(const Vector4& other) const;
-    Vector4<T> operator/(float factor) const;
+    Vector4<T> operator/(const T& factor) const;
 
     T dot(const Vector4& other) const;
     Vector4<T> cross(const Vector4& other) const;
